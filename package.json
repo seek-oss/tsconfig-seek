@@ -2,7 +2,7 @@
   "name": "tsconfig-seek",
   "version": "0.0.0-development",
   "description": "TSLint configuration used by SEEK",
-  "main": "index.js",
+  "main": "tsconfig.json",
   "repository": {
     "type": "git",
     "url": "https://github.com/seek-oss/tsconfig-seek.git"
