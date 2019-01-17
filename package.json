@@ -1,0 +1,42 @@
+{
+  "name": "tsconfig-seek",
+  "version": "0.0.0-development",
+  "description": "TSLint configuration used by SEEK",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seek-oss/tsconfig-seek.git"
+  },
+  "author": "SEEK",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seek-oss/tsconfig-seek/issues"
+  },
+  "scripts": {
+    "commit": "git-cz",
+    "semantic-release": "semantic-release"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint --edit --extends seek"
+    }
+  },
+  "homepage": "https://github.com/seek-oss/tsconfig-seek#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^7.2.1",
+    "commitizen": "^3.0.2",
+    "commitlint-config-seek": "^1.0.0",
+    "cz-conventional-changelog": "^2.1.0",
+    "husky": "^1.1.2",
+    "semantic-release": "^15.9.17"
+  },
+  "release": {
+    "success": false
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "tsconfig": "tsconfig.json"
+}
