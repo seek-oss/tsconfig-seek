@@ -12,7 +12,7 @@ Then create a file named `tsconfig.json` in the root folder of your project with
 
 ```
 {
-  "extends": "@my-team/tsconfig-base",
+  "extends": "tsconfig-seek",
   "include": ["src/**/*.ts"],
   "compilerOptions": {
     // Override certain options on a project-by-project basis.
