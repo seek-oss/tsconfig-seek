@@ -6,11 +6,11 @@ This package includes the shareable [tsconfig](https://www.typescriptlang.org/do
 
 ## Usage
 
-First, install this package make sure you use `typescript` v3.2+.
+First, install this package and make sure you use `typescript` v3.2+.
 
-Then create a file named `tsconfig.json` in the root folder of your project with following contents:
+Then create a file named `tsconfig.json` in the root folder of your project:
 
-```
+```json
 {
   "extends": "tsconfig-seek",
   "include": ["src/**/*.ts"],
