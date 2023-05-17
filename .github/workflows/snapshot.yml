@@ -2,6 +2,8 @@ name: Snapshot
 
 on: workflow_dispatch
 
+permissions: {}
+
 jobs:
   publish:
     name: Publish snapshot version
