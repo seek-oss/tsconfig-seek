@@ -27,5 +27,8 @@
     "changeset-version": "changeset version && prettier --write ."
   },
   "tsconfig": "tsconfig.json",
-  "packageManager": "pnpm@7.27.1"
+  "packageManager": "pnpm@7.27.1",
+  "volta": {
+    "node": "16.19.1"
+  }
 }
