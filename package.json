@@ -23,7 +23,7 @@
   },
   "scripts": {
     "release": "changeset publish",
-    "test": "tsc",
+    "test": "tsc --noEmit",
     "changeset-version": "changeset version && prettier --write ."
   },
   "tsconfig": "tsconfig.json",
