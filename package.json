@@ -1,8 +1,11 @@
 {
   "name": "tsconfig-seek",
-  "version": "0.0.0-development",
+  "version": "1.0.2",
   "description": "TSLint configuration used by SEEK",
   "main": "tsconfig.json",
+  "files": [
+    "tsconfig.json"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/seek-oss/tsconfig-seek.git"
@@ -12,31 +15,19 @@
   "bugs": {
     "url": "https://github.com/seek-oss/tsconfig-seek/issues"
   },
-  "scripts": {
-    "commit": "git-cz",
-    "semantic-release": "semantic-release"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint --edit --extends seek"
-    }
-  },
   "homepage": "https://github.com/seek-oss/tsconfig-seek#readme",
   "devDependencies": {
-    "@commitlint/cli": "^7.2.1",
-    "commitizen": "^3.0.2",
-    "commitlint-config-seek": "^1.0.0",
-    "cz-conventional-changelog": "^2.1.0",
-    "husky": "^1.1.2",
-    "semantic-release": "^15.9.17"
+    "@changesets/cli": "^2.26.0",
+    "@changesets/get-github-info": "^0.5.2",
+    "typescript": "^5.0.4"
   },
-  "release": {
-    "success": false
+  "scripts": {
+    "release": "changeset publish",
+    "test": "tsc --noEmit",
+    "changeset-version": "changeset version && prettier --write ."
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
-  "tsconfig": "tsconfig.json"
+  "packageManager": "pnpm@7.27.1",
+  "volta": {
+    "node": "16.19.1"
+  }
 }
