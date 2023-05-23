@@ -24,7 +24,7 @@
   "scripts": {
     "release": "changeset publish",
     "test": "tsc --noEmit",
-    "changeset-version": "changeset version && prettier --write ."
+    "changeset-version": "changeset version"
   },
   "packageManager": "pnpm@7.27.1",
   "volta": {
