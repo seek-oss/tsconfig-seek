@@ -7,7 +7,7 @@ This package includes the shareable [tsconfig](https://www.typescriptlang.org/do
 
 ## Usage
 
-First, install this package and make sure you use `typescript` v3.2+.
+First, install this package and make sure you use `typescript` v4.1+.
 
 Then create a file named `tsconfig.json` in the root folder of your project:
 
